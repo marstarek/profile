@@ -1,15 +1,15 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Arial;
 }
 
 .slider-container {
-    margin: 10 auto;
+    margin: 10px auto;
     width: 800px;
     height: 250px;
     position: relative;
@@ -20,19 +20,21 @@ body {
     opacity: 0;
     transition: opacity 1s;
     z-index: 1;
+    width: 800px;
+    height: 250px;
 }
 
 .slider-container img.active {
-    opacity: 1
+    opacity: 1;
 }
 
 .slider-container .slide-number {
     position: absolute;
     left: 10px;
     top: 10px;
-    background-color: rgba(0, 0, 0, 0.582);
-    color: white;
-    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, .6);
+    color: #FFF;
+    padding: 10px 10px;
     font-size: 20px;
     z-index: 2;
     border-radius: 6px;
@@ -46,8 +48,8 @@ body {
 
 .slider-controls .prev,
 .slider-controls .next {
-    background-color: aqua;
-    color: white;
+    background-color: #009688;
+    color: #FFF;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -67,7 +69,7 @@ body {
 
 .slider-controls .prev.disabled,
 .slider-controls .next.disabled {
-    background-color: brown;
+    background-color: rgba(0, 150, 136, 0.5);
     cursor: no-drop;
 }
 
