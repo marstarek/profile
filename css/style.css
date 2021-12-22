@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -131,7 +136,7 @@ body {
 
 .social-icon {
     cursor: pointer;
-    transition: ease-in-out .6s
+    transition: ease-in-out .3s
 }
 
 .soclicon {
@@ -139,5 +144,27 @@ body {
 }
 
 .social-icon:hover {
-    transform: translateY(-6px);
+    transform: translateY(-7px);
+}
+
+
+/* hero section */
+
+.hero-heading {
+    color: #fff;
+    font-size: 90px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.home-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    opacity: .6;
+}
+
+.h-head {
+    z-index: 44444;
+    padding-left: 10rem;
 }
