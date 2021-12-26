@@ -1,2 +1,1 @@
-# slider
- 
+https://marstarek.github.io/slider/ 
