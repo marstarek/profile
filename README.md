@@ -1,1 +1,1 @@
-https://marstarek.github.io/slider/ 
+https://marstarek.github.io/profile/
