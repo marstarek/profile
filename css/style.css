@@ -201,6 +201,11 @@ nav {
     .project-heading.project-heading {
         font-size: 3rem;
     }
+    .hero-heading.typewriter {
+        animation: none;
+        font-size: 40px;
+        border-right: none;
+    }
 }
 
 
@@ -208,7 +213,7 @@ nav {
 
 .hero-heading {
     color: #fff;
-    font-size: 90px;
+    font-size: 80px;
     text-transform: capitalize;
     font-weight: 300;
 }
@@ -247,6 +252,36 @@ nav {
     z-index: 44444;
     /* padding-left: 10rem; */
 }
+
+
+/* SKILLS */
+
+.skill-head {
+    font-size: 70px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.progress {
+    position: relative;
+    width: 500px;
+    height: 30px;
+    background-color: white;
+    margin: 10px 0px;
+}
+
+.progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #FF8E88!important;
+    transition: width 0.6s linear;
+}
+
+
+/* end SKILLS */
 
 
 /* to do list  */
@@ -593,4 +628,30 @@ nav {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+}
+
+.typewriter {
+    border-right: 2px solid #333;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: control-width 3s steps(14) 2s both, blink 0.5s infinite;
+}
+
+@keyframes control-width {
+    from {
+        width: 0;
+    }
+    to {
+        width: 550px;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right-color: #333;
+    }
+    to {
+        border-right-color: transparent;
+    }
 }

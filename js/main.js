@@ -74,3 +74,14 @@ function removeAllActive() {
         bullet.classList.remove("active");
     });
 }
+// skills
+let section = document.querySelector(".skills");
+let progSpans = document.querySelectorAll(".progress span");
+window.onscroll = function() {
+    if (window.scrollY >= section.offsetTop - 200) {
+        console.log("section is here");
+        progSpans.forEach((spano) => {
+            spano.style.width = spano.dataset.width;
+        });
+    }
+};
