@@ -6,6 +6,16 @@
     font-family: 'Cairo', sans-serif;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -146,11 +156,13 @@ nav {
 }
 
 .soclicon {
-    font-size: 4rem;
+    font-size: 3rem;
+    transition: 0.6s;
 }
 
 .social-icon:hover {
     transform: translateY(-7px);
+    -webkit-text-fill-color: #ff4f4f;
 }
 
 @media only screen and (max-width: 600px) {
@@ -206,6 +218,16 @@ nav {
         font-size: 40px;
         border-right: none;
     }
+    .profile-img-container {
+        display: none
+    }
+    .project-content {
+        max-height: 75%
+    }
+    .project-content .project-info {
+        margin: 0;
+        font-size: 16px;
+    }
 }
 
 
@@ -222,7 +244,7 @@ nav {
     height: 500px;
     width: 100%;
     object-fit: cover;
-    opacity: .6;
+    opacity: .9;
 }
 
 .profile-img-container {
@@ -232,7 +254,7 @@ nav {
 .D-cv-btn {
     position: absolute;
     right: 28%;
-    top: 50%;
+    top: 90%;
     background: none!important;
     border: 1px solid #ffffff!important;
     color: #ffffff;
@@ -269,6 +291,7 @@ nav {
     height: 30px;
     background-color: white;
     margin: 10px 0px;
+    max-width: 100%;
 }
 
 .progress span {
@@ -552,8 +575,11 @@ nav {
 
 .project-btn.live {
     background: none;
-    border: 2px solid #212529;
-    color: #212529;
+    border: 2px solid #ffffff;
+}
+
+.project-btn.live a {
+    color: #000000;
 }
 
 .project-card:hover .project-img {
@@ -617,7 +643,7 @@ nav {
 
 .map {
     width: 100%;
-    height: 79%;
+    height: 89%;
     padding: 10px;
     border: 2px solid #fff;
     background: rgba(255, 255, 255, 0.2);
@@ -654,4 +680,76 @@ nav {
     to {
         border-right-color: transparent;
     }
+}
+
+.switcher {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.switcher li {
+    background-color: #333;
+    margin: 0 5px;
+    padding: 6px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.product {
+    width: 500px;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 33%;
+    max-width: 50%;
+    display: none
+}
+
+.product .num {
+    background-color: #ff4f4f;
+    color: #ffffff;
+    height: 4rem;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s;
+}
+
+.product h3 {
+    margin: 15px 0;
+    font-size: 26px;
+    transition: 0.6s;
+}
+
+.product p {
+    margin-top: 2rem;
+    line-height: 1.6;
+    font-size: 18px;
+    transition: 0.6s;
+}
+
+.product:hover .num {
+    box-shadow: 0 0 0 600px #ff4f4f;
+}
+
+.product:hover h3,
+.product:hover p {
+    color: rgb(255, 255, 255);
+}
+
+.activdiv {
+    background-color: #ffffff !important;
+    color: #000000;
+}
+
+.project-card a {
+    color: rgb(255, 255, 255);
 }

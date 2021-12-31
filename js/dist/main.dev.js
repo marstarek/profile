@@ -89,3 +89,36 @@ window.onscroll = function () {
     });
   }
 };
+
+var switcherList = document.querySelectorAll(".switcher li");
+var imgs = document.querySelectorAll(".gallery div");
+
+window.onload = function () {
+  document.querySelectorAll(".info").forEach(function (el) {
+    el.style.display = "block";
+  });
+};
+
+switcherList.forEach(function (li) {
+  li.addEventListener("click", removeActive);
+  li.addEventListener("click", manageImg);
+});
+
+function removeActive() {
+  var _this = this;
+
+  switcherList.forEach(function (li) {
+    li.classList.remove("activdiv");
+
+    _this.classList.add("activdiv");
+  });
+}
+
+function manageImg() {
+  imgs.forEach(function (img) {
+    img.style.display = "none";
+  });
+  document.querySelectorAll(this.dataset.cat).forEach(function (el) {
+    el.style.display = "block";
+  });
+}
