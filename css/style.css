@@ -754,3 +754,25 @@ nav {
 .project-card a {
     color: rgb(255, 255, 255);
 }
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -50px;
+    background-color: #f44336;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.up i {
+    color: white;
+}
+
+.show {
+    right: 20px;
+}
