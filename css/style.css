@@ -160,7 +160,7 @@ nav {
     transition: 0.6s;
 }
 
-.social-icon:hover {
+.social-icon:hover .soclicon {
     transform: translateY(-7px);
     -webkit-text-fill-color: #ff4f4f;
 }
@@ -686,6 +686,7 @@ nav {
     display: flex;
     list-style: none;
     justify-content: center;
+    cursor: pointer;
 }
 
 .switcher li {
