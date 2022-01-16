@@ -112,14 +112,3 @@ function manageImg() {
         el.style.display = "block";
     });
 }
-
-let upSpan = document.querySelector(".up");
-window.onscroll = function() {
-    console.log(this.scrollY);
-
-    if (this.scrollY >= 2500) {
-        upSpan.classList.add("show");
-    } else {
-        upSpan.classList.remove("show");
-    }
-};

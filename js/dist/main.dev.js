@@ -82,7 +82,7 @@ var section = document.querySelector(".skills");
 var progSpans = document.querySelectorAll(".progress span");
 
 window.onscroll = function () {
-  if (window.scrollY >= section.offsetTop - 200) {
+  if (window.scrollY >= section.offsetTop) {
     console.log("section is here");
     progSpans.forEach(function (spano) {
       spano.style.width = spano.dataset.width;
@@ -126,8 +126,7 @@ function manageImg() {
 var upSpan = document.querySelector(".up");
 
 window.onscroll = function () {
-  console.log(this.scrollY);
-
+  // console.log(this.scrollY);
   if (this.scrollY >= 2500) {
     upSpan.classList.add("show");
   } else {
